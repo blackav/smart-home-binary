@@ -69,7 +69,7 @@ DbMG_38BBgaI0Kv6kzGK
 Опция `-B` выполняет декодирование пакета из base64 в JSON-форму, например, если выполнить из командной строки Unix команду
 
 ```
-echo 'DbMG_38BBgaI0Kv6kzGK' | ./smarthome -B
+echo "DbMG_38BBgaI0Kv6kzGK" | ./smarthome -B
 ```
 
 на стандартный поток вывода будет напечатано
@@ -161,3 +161,30 @@ DbMG_38BBgaI0Kv6kzGK
 ```
 
 Внимание! Команды даны в предположении, что вы используете Linux или MacOS. В windows соответствующие команды могут быть другими.
+
+## Примеры пакетов
+
+Ниже приведены примеры пакетов в base64 для всех возможных пар из типа устройства и команды.
+
+* SmartHub, WHOISHERE (1, 1): `DAH_fwEBAQVIVUIwMeE`
+* SmartHub, IAMHERE (1, 2): `DAH_fwIBAgVIVUIwMak`
+* EnvSensor, WHOISHERE (2, 1): `OAL_fwMCAQhTRU5TT1IwMQ8EDGQGT1RIRVIxD7AJBk9USEVSMgCsjQYGT1RIRVIzCAAGT1RIRVI03Q`
+* EnvSensor, IAMHERE (2, 2): `OAL_fwQCAghTRU5TT1IwMQ8EDGQGT1RIRVIxD7AJBk9USEVSMgCsjQYGT1RIRVIzCAAGT1RIRVI09w`
+* EnvSensor, GETSTATUS (2, 3): `BQECBQIDew`
+* EnvSensor, STATUS (2, 4): `EQIBBgIEBKUB2jbUjgaMjfILoQ`
+* Switch, WHOISHERE (3, 1): `IgP_fwcDAQhTV0lUQ0gwMQMFREVWMDEFREVWMDIFREVWMDO1`
+* Switch, IAMHERE (3, 2): `IgP_fwgDAghTV0lUQ0gwMQMFREVWMDEFREVWMDIFREVWMDMo`
+* Switch, GETSTATUS (3, 3): `BQEDCQMDoA`
+* Switch, STATUS (3, 4): `BgMBCgMEAac`
+* Lamp, WHOISHERE (4, 1): `DQT_fwsEAQZMQU1QMDG8`
+* Lamp, IAMHERE (4, 2): `DQT_fwwEAgZMQU1QMDGU`
+* Lamp, GETSTATUS (4, 3): `BQEEDQQDqw`
+* Lamp, STATUS (4, 4): `BgQBDgQEAaw`
+* Lamp, SETSTATUS (4, 5): `BgEEDwQFAeE`
+* Socket, WHOISHERE (5, 1): `DwX_fxAFAQhTT0NLRVQwMQ4`
+* Socket, IAMHERE (5, 2): `DwX_fxEFAghTT0NLRVQwMc0`
+* Socket, GETSTATUS (5, 3): `BQEFEgUD5A`
+* Socket, STATUS (5, 4): `BgUBEwUEAQ8`
+* Socket, SETSTATUS (5, 5): `BgEFFAUFAQc`
+* Clock, IAMHERE (6, 2): `Dgb_fxUGAQdDTE9DSzAxHA`
+* Clock, TICK (6, 6): `DAb_fxgGBpabldu2NNM`
