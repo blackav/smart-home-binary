@@ -69,7 +69,7 @@ DbMG_38BBgaI0Kv6kzGK
 Опция `-B` выполняет декодирование пакета из base64 в JSON-форму, например, если выполнить из командной строки Unix команду
 
 ```
-echo "DbMG_38BBgaI0Kv6kzGK" | ./smarthome -B
+echo DbMG_38BBgaI0Kv6kzGK | ./smarthome -B
 ```
 
 на стандартный поток вывода будет напечатано
